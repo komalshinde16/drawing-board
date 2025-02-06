@@ -1,0 +1,81 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.heading{
+    text-align: center;
+    padding: 2vh 0;
+    font-size: 40px;
+    margin-bottom: 60px;
+    text-shadow: 2px 2px 4px palevioletred;
+
+}
+
+.draw-board-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.draw-board{
+    width: 520px;
+    height: 539px;
+    flex-wrap: wrap;
+    display: flex;
+    
+}
+
+.child{
+    height: 60px;
+    width: 65px;
+    border: 1px solid black;
+}
+
+.tools{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4vw;
+    padding: 2vh 0;
+}
+
+.tools button{
+    background-color: coral;
+    color: aliceblue;
+    border: 1px solid black;
+    border-radius: 4px;
+    padding: 8px 15px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.draw-board{
+    box-shadow: 5px 5px 15px lightcoral;
+}
+
+button:hover{
+    background-color: darkgreen;
+}
+
+@keyframes popUp {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .heading{
+    animation: popUp 1s ease-in-out;
+    animation-iteration-count: 2;
+  }
